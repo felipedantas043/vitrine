@@ -75,7 +75,7 @@ a{
 
 .product-info-description{
     display: grid;
-    grid-template-rows: 27px 35px 1fr;
+    grid-template-rows: 27px 40px 1fr;
     padding: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2 );
     border-top: 1px solid rgba(0, 0, 0, 0.2 );
