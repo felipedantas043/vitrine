@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+section{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "container"
+        "footer"
+    ;
+}
+.header{
+    grid-area: header;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    background: whitesmoke;
+    justify-content: space-between;
+}
+.menu{
+    margin-right: 50px;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: black;
+}
+.container{
+    grid-area: container;
+    width: 90%;
+    margin: 100px auto;
+}
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.product-item{
+    margin: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2 );
+    overflow: hidden;
+}
+.product-item:hover{
+    box-shadow: 8px 10px 20px 0px rgb(0 0 0 / 37%);
+}
+.product-link{
+    text-decoration: none;
+}
+.product-info-img{
+    padding: 30px;
+}
+.product-info-img img{
+    width: 100%;
+
+}
+
+
+.star-ranking{
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+.star-ranking li{
+    width: 20px;
+}
+.star-ranking li img{
+    width: 100%;
+}
+
+.product-info-description{
+    display: grid;
+    grid-template-rows: 27px 35px 1fr;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2 );
+    border-top: 1px solid rgba(0, 0, 0, 0.2 );
+}
+.title{
+    font-size: 14pt;
+}
+.description{
+    overflow: hidden;
+    font-weight: 300;
+}
+.qtd-votes{
+    margin-left: 10px;
+}
+
+.price-box{
+    padding: 15px;
+}
+.price div{
+    margin-bottom: 10px;
+}
+.price del{
+    color: rgb(80, 80, 80);
+    font-size: 12pt;
+    margin: 0 10px 10px 0;
+}
+.price ins{
+    color: blue;
+    font-size: 16pt;
+    font-weight: 600;
+    text-decoration: none;
+}
+.price-info{
+    color: blue;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+
+.footer-main{
+    grid-area: footer;
+    background: rgb(27, 27, 31);
+    color: white;
+}
+.footer-container{
+    padding-top: 30px;
+}
+.footer-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+    .product-list{
+        grid-template-columns: 1fr 1fr;
+    }
+    .product-item{
+        margin: 20px;
+    }
+}
+@media (max-width: 650px) {
+    .product-list{
+        grid-template-columns: 1fr;
+    }
+    .product-item{
+        margin: 20px;
+    }
+}
