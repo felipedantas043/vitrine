@@ -17,7 +17,7 @@ section{
     grid-area: header;
     display: flex;
     width: 100%;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     top: 0;
     background: whitesmoke;
     justify-content: space-between;
@@ -50,6 +50,9 @@ a{
 .categorias:hover .submenu li{
     display: block;
     
+}
+.logo{
+    margin-left: 30px;
 }
 
 .submenu{
