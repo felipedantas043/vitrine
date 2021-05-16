@@ -9,12 +9,15 @@
     <title>Document</title>
 </head>
 <html>
-    <body ondragend="drag()">
+    <body>
         
         <section>
-            <header id="teste" class="header">
+            <header class="header">
+                <div id="sanduiche" class="menu-sanduiche" onclick="menu()">
+                    <div class="icon"></div>
+                </div>
                 <div class="logo"><a href="index.html"><img src="#" alt="logo"></a></div>
-                <div class="menu">
+                <div class="menu" id="menu">
                     <ul>
                         <li class="categorias"><a href="#">Produto 1</a>
                             <ul class="submenu">
@@ -48,33 +51,9 @@
                                 <li><a href="">produto 1.1</a></li>
                             </ul>
                         </li>
-                        <li class="categorias"><a href="#">Produto 5</a>
-                            <ul class="submenu">
-                                <li><a href="">produto 1.1</a></li>
-                                <li><a href="">produto 1.1</a></li>
-                                <li><a href="">produto 1.1</a></li>
-                                <li><a href="">produto 1.1</a></li>
-                            </ul>
-                        </li>
-                        <li class="categorias"><a href="#">Produto 6</a>
-                            <ul class="submenu">
-                                <li><a href="">produto 1.1</a></li>
-                                <li><a href="">produto 1.1</a></li>
-                                <li><a href="">produto 1.1</a></li>
-                                <li><a href="">produto 1.1</a></li>
-                            </ul>
-                        </li>
-                        <li class="categorias"><a href="#">Produto 7</a>
-                            <ul class="submenu">
-                                <li><a href="">produto 1.1</a></li>
-                                <li><a href="">produto 1.1</a></li>
-                                <li><a href="">produto 1.1</a></li>
-                                <li><a href="">produto 1.1</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </div>
-                <div style="margin-right: 50px;">
+                <div style="margin-right: 10px;">
                     <ul>
                         <li>
                             <a href="#">Contato</a>
@@ -414,7 +393,6 @@
                     <p>&copy;Copyrigth e endereço, ou mais informações.</p>
                 </div>
             </footer>
-        </section>
-
+        </section>  
     </body>
 </html>
