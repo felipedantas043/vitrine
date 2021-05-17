@@ -5,12 +5,15 @@
     padding: 0;
     font-family: "Rubik", sans-serif;
 }
+ul{
+    list-style: none;
+}
 section{
     display: grid;
     grid-template-areas: 
-        "header"
-        "container"
-        "footer"
+    "header"
+    "container"
+    "footer"
     ;
 }
 .header{
@@ -22,50 +25,29 @@ section{
     background: whitesmoke;
     justify-content: space-between;
 }
+
 .menu{
-    margin-right: 50px;
-    
-}
-.menu ul{
     display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.menu li{
+    margin: 5px;
 }
 .menu li a{
-    margin: 5px;
-    padding: 10px;
-    
-}
-ul{
-    list-style: none;
-}
-a{
     color: black;
+    background: rgba(153, 153, 153, 0.205);
+    padding: 8px;
     text-decoration: none;
+    border-radius: 10px;
 }
-.categorias{
-    position: relative;
-}
-.categorias a:hover{
-    background: rgba(0, 0, 0, 0.178);
-}
-.categorias:hover .submenu li{
-    display: block;
-    
+.menu li a:hover{
+    transition: .3s;
+    background: rgba(112, 112, 112, 0.336);
 }
 .logo{
     margin-left: 30px;
-}
-
-.submenu{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.178);
-    flex-wrap: wrap;
-    width: 200px;
-    margin: 10px auto 0 5px;
-    
-}
-.submenu li{
-    margin-top: 20px;
-    display: none;
 }
 .contato{
     margin-right: 30px;
@@ -125,6 +107,7 @@ a{
 }
 .description{
     overflow: hidden;
+    color: black;
     font-weight: 300;
 }
 .qtd-votes{
