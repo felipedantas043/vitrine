@@ -22,50 +22,34 @@ section{
     background: whitesmoke;
     justify-content: space-between;
 }
+
 .menu{
-    margin-right: 50px;
-    
-}
-.menu ul{
     display: flex;
-}
-.menu li a{
-    margin: 5px;
-    padding: 10px;
-    
-}
-ul{
     list-style: none;
 }
-a{
-    color: black;
-    text-decoration: none;
-}
-.categorias{
-    position: relative;
-}
-.categorias a:hover{
-    background: rgba(0, 0, 0, 0.178);
-}
-.categorias:hover .submenu li{
-    display: block;
-    
-}
-.logo{
-    margin-left: 30px;
+.submenu{
+    display: none;
+    background: white;
+    position: fixed;
+    list-style: none;
 }
 
-.submenu{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.178);
-    flex-wrap: wrap;
-    width: 200px;
-    margin: 10px auto 0 5px;
-    
+.menu li{
+    margin: 5px;
 }
-.submenu li{
-    margin-top: 20px;
-    display: none;
+.menu li a{
+    padding: 5px;
+    background: red;
+}
+.menu li:hover .submenu{
+    display: block;
+}
+.submenu li a{
+    background: none;
+}
+
+.logo{
+    margin-left: 30px;
 }
 .contato{
     margin-right: 30px;
