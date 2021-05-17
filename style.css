@@ -5,12 +5,15 @@
     padding: 0;
     font-family: "Rubik", sans-serif;
 }
+ul{
+    list-style: none;
+}
 section{
     display: grid;
     grid-template-areas: 
-        "header"
-        "container"
-        "footer"
+    "header"
+    "container"
+    "footer"
     ;
 }
 .header{
@@ -26,28 +29,23 @@ section{
 .menu{
     display: flex;
     list-style: none;
-}
-.submenu{
-    display: none;
-    background: white;
-    position: fixed;
-    list-style: none;
+    flex-wrap: wrap;
 }
 
 .menu li{
     margin: 5px;
 }
 .menu li a{
-    padding: 5px;
-    background: red;
+    color: black;
+    background: rgba(153, 153, 153, 0.205);
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 10px;
 }
-.menu li:hover .submenu{
-    display: block;
+.menu li a:hover{
+    transition: .3s;
+    background: rgba(112, 112, 112, 0.336);
 }
-.submenu li a{
-    background: none;
-}
-
 .logo{
     margin-left: 30px;
 }
@@ -109,6 +107,7 @@ section{
 }
 .description{
     overflow: hidden;
+    color: black;
     font-weight: 300;
 }
 .qtd-votes{
